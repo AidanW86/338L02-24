@@ -4,7 +4,9 @@ import timeit
 import matplotlib.pyplot as plt
 
 import random
-# NOTE: the input was partially sorted. Making the input random improved the performance of the quicksort algorithm which is known perform poorly for nearly sorted inputs
+# the input was partially sorted. Making the input random 
+# improved the performance of the quicksort algorithm which is 
+# known perform poorly for nearly sorted inputs
 sys.setrecursionlimit(20000)
 
 def func1(arr, low, high):
@@ -54,7 +56,7 @@ def quickSort1( lists, OrderedLists, index):
     
     return OrderedLists
     
-with open("ex2.json", "r") as inF:
+with open("ex2.5.json", "r") as inF:
     content = json.load(inF)
 
 sort_time = []
